@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.wangss.Mapper.ICiMapper;
 import org.wangss.Model.BootCi;
 
+import java.util.List;
+
 /**
  * Created by wangss on 2017/5/12.
  */
@@ -21,5 +23,10 @@ public class CiController {
     @RequestMapping("/id/{id}")
     public BootCi queryCiById(@PathVariable String id) {
         return ciMapper.getBootCiById(id);
+    }
+
+    @RequestMapping("/author/{author}")
+    public List<BootCi> queryCisByAuthor(@PathVariable String author){
+        return ciMapper.getBootCisByAuthor(author);
     }
 }
