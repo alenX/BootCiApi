@@ -1,1 +1,7 @@
-<h1>首页登陆页面</h1>
+<title>登录</title>
+
+<form action="/index/login">
+    <label>username:</label><input type="text"><br>
+    <label>password:</label><input type="password"><br>
+    <button type="submit">submit</button>
+</form>
