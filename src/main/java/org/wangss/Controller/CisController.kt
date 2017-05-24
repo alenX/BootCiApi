@@ -19,6 +19,7 @@ class CisController {
 
     @RequestMapping("/id/{id}")
     fun queryCiById(@PathVariable id: String): Ci {
+
          return ciMapper!!.getCiById(id)
     }
 }
